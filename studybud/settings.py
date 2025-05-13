@@ -79,10 +79,21 @@ AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
 
+
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
+
+
+
+# CSRF settings
+CSRF_TRUSTED_ORIGINS = [
+    'https://studybud-6vws.onrender.com',
+    'http://studybud-6vws.onrender.com',
+]
+
+
 
 # 🔥 THIS IS REQUIRED FOR DEPLOYMENT
 STATIC_URL = '/static/'
