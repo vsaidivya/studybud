@@ -36,9 +36,6 @@
         </div>
 
 
-        {% if request.user != user %}
-    <a href="{% url 'get-or-create-private-room' user.username %}" class="btn btn-sm btn-primary float-right">DM</a>
-{% endif %}
 
         <div class="roomList__header">
           <div>
